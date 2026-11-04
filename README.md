@@ -2,6 +2,8 @@
 
 **Give your agent a purse, not your card.** You write spending rules in plain English. Purse turns them into hard limits, checks every purchase an AI agent attempts in deterministic code, and moves the money with PayPal — paying on its own inside the rules, asking you for anything outside them, and refusing what you ruled out.
 
+![Purse: the agent's purchases on the left, the owner's purse on the right](docs/screenshot.jpg)
+
 Built for the [PayPal AI Hackathon](https://paypalaihackathon.devpost.com/) (2026).
 
 - **Live demo (runs in your browser, simulated payments):** https://indosaram.github.io/purse/
