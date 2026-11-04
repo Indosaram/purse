@@ -1,0 +1,16 @@
+{
+  "name": "purse",
+  "version": "0.1.0",
+  "description": "A purse for your AI agent: plain-English spending rules, enforced in code, paid with PayPal.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Indo Yoon (https://github.com/Indosaram)",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "mcp": "node mcp.js",
+    "test": "node --test test/*.test.js"
+  },
+  "repository": { "type": "git", "url": "https://github.com/Indosaram/purse.git" },
+  "keywords": ["paypal", "agentic-commerce", "mcp", "ai-agents", "payments", "vault"]
+}

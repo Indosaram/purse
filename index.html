@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purse — a wallet your AI agent can carry</title>
+  <meta name="description" content="Give your AI agent a purse, not your card. Plain-English spending rules, enforced in code, paid with PayPal." />
+  <link rel="icon" href="web/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="web/fonts.css" />
+  <link rel="stylesheet" href="web/app.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 13c0-4 4.5-7 10-7s10 3 10 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><rect x="3.5" y="12" width="25" height="15" rx="4" fill="currentColor"/><circle cx="16" cy="19.5" r="2.6" fill="var(--paper)"/></svg>
+      <span class="word">Purse</span>
+      <span class="tag">a wallet your AI agent can carry</span>
+    </div>
+    <div class="status" id="status"></div>
+  </header>
+
+  <main class="stage">
+    <section class="agent" aria-label="Your agent">
+      <div class="pane-head">
+        <div class="who">
+          <span class="avatar">PA</span>
+          <div>
+            <div class="name">Pantry agent</div>
+            <div class="sub">Shops for the house. Pays through Purse — never sees a card.</div>
+          </div>
+        </div>
+        <button class="ghost small" id="mcpBtn" title="Use Purse from any MCP agent">Connect your own agent</button>
+      </div>
+
+      <form class="errand" id="errand">
+        <label for="task" class="eyebrow">Errand</label>
+        <textarea id="task" rows="2" spellcheck="false" placeholder="Tell the agent what the house needs…"></textarea>
+        <div class="errand-foot">
+          <div class="presets" id="presets"></div>
+          <button class="primary" type="submit" id="go">Send agent</button>
+        </div>
+      </form>
+
+      <div class="feed" id="feed" aria-live="polite"></div>
+    </section>
+
+    <aside class="purse" aria-label="Your purse">
+      <div class="wallet" id="wallet"></div>
+      <div class="block" id="inbox"></div>
+      <div class="block" id="suggestions"></div>
+      <div class="block" id="rules"></div>
+      <div class="block" id="ledger"></div>
+      <footer class="foot">
+        <button class="link" id="reset">Reset demo</button>
+        <a class="link" href="https://github.com/Indosaram/purse" target="_blank" rel="noopener">Source (MIT)</a>
+      </footer>
+    </aside>
+  </main>
+
+  <div class="toasts" id="toasts"></div>
+  <dialog id="sheet"></dialog>
+  <script type="module" src="web/app.js"></script>
+</body>
+</html>
